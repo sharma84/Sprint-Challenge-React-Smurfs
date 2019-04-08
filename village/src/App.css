@@ -1,3 +1,26 @@
 .App {
   text-align: center;
 }
+.html {
+  font: 62.5%;
+}
+.Smurf {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+}
+.Smurf h3 {
+  width: 300px;
+  font-size: 1.6rem;
+}
+.Smurf h2 {
+  width: 200px;
+  font-size: 1.6rem;
+}
+.Smurf p {
+  width: 300px;
+  font-size: 1.6rem;
+}
