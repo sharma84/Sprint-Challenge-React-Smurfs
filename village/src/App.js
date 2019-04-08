@@ -12,9 +12,6 @@ class App extends Component {
     super(props);
     this.state = {
       smurfs: []
-      // name: "",
-      // height:"",
-      // age: ""
     };
   }
 
@@ -35,19 +32,23 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/smurf-form">Add a Smurf</NavLink>
+        <div className="header">
+          <NavLink className="nav" to="/">
+            Home
+          </NavLink>
+          <NavLink className="nav" to="/smurf-form">
+            Add a Smurf
+          </NavLink>
         </div>
 
         <Route
           path="/smurf-form"
           render={(props) => (
             <SmurfForm
-              {...props}
+              {...props} //props.match, props.history, props.location
               smurfs={this.state.smurfs}
               updateSmurfs={this.updateSmurfs}
-            /> //props.match, props.history, props.location
+            />
           )}
         />
         <Route
